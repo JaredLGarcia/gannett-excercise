@@ -1,0 +1,11 @@
+curl http://localhost:8080/produce \
+    --include \
+    --header "Content-Type: application/json" \
+    --request "POST" \
+    --data '[{"produce_code": "BRM8-8YT6-R09R-MTY1","name": "Watermelon","unit_price": 10.00}]'
+
+curl http://localhost:8080/multiproduce \
+    --include \
+    --header "Content-Type: application/json" \
+    --request "POST" \
+    --data '[{"produce_code": "BRM8-8YT6-R09R-MTY1","name": "Watermelon","unit_price": 10.00}, {"produce_code": "PS92-3UIT-74U3-YU92","name": "Bananas","unit_price": 5.00}]'
